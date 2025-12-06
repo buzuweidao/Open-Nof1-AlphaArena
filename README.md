@@ -6,6 +6,10 @@
 
 A high-fidelity clone of **nof1's Alpha Arena** AI trading dashboard, featuring real-time charting, trade feeds, and model reasoning logs. This project simulates an environment where various AI models (like GPT-5.1, Claude Sonnet 4.5, Gemini 3 Pro, etc.) compete in trading scenarios.
 
+## Demo Video
+
+- Compressed preview: [assets/demo.mp4](assets/demo.mp4)
+
 ## Features
 
 *   **Real-time Dashboard:** Interactive charts displaying aggregate account values and individual model performance.
