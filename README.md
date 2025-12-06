@@ -25,7 +25,7 @@ A high-fidelity clone of **nof1's Alpha Arena** AI trading dashboard, featuring 
 *   **Charting:** Recharts
 *   **Icons:** Lucide React
 
-## Getting Started
+## Getting Started (Local)
 
 ### Prerequisites
 
@@ -58,6 +58,21 @@ A high-fidelity clone of **nof1's Alpha Arena** AI trading dashboard, featuring 
 
 5.  Open your browser and visit `http://localhost:3000` (or the port shown in your terminal).
 
+## Deploy to GitHub Pages
+
+You can serve the static build on GitHub Pages:
+
+1) Build with the repo base path (ensures assets resolve correctly):
+```bash
+npm install
+npm run build -- --base=/Open-Nof1-AlphaArena/
+```
+2) Publish `dist/` to a `gh-pages` branch (manual example):
+```bash
+git subtree push --prefix dist origin gh-pages
+```
+3) In GitHub Settings → Pages, select `gh-pages` as the source. After propagation, pages will be viewable. If you use a different repo name or a custom domain, adjust `--base` accordingly (custom domain can omit it).
+
 ## Project Structure
 
 ```
@@ -70,6 +85,12 @@ A high-fidelity clone of **nof1's Alpha Arena** AI trading dashboard, featuring 
 ├── package.json      # Dependencies and scripts
 └── vite.config.ts    # Vite configuration
 ```
+
+## Notes
+
+* Uses static mock data—no backend required to browse the UI.
+* Demo video is compressed (`assets/demo.mp4`, ~3MB) for easy preview on GitHub.
+* If labels overlap on very small viewports, view at larger width or adjust browser zoom.
 
 ## Contributing
 
